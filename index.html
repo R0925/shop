@@ -1,161 +1,138 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
 
-  <link rel="stylesheet" href="./assets/styles/style.css" />
+    <link
+      href="./assets/fontawesome/css/fontawesome.min.css"
+      rel="stylesheet"
+    />
+    <link href="./assets/fontawesome/css/brands.min.css" rel="stylesheet" />
+    <link href="./assets/fontawesome/css/solid.min.css" rel="stylesheet" />
 
-  <link href="./assets/fontawesome/css/fontawesome.min.css" rel="stylesheet" />
-  <link href="./assets/fontawesome/css/brands.min.css" rel="stylesheet" />
-  <link href="./assets/fontawesome/css/solid.min.css" rel="stylesheet" />
+    <title>فروشگاه</title>
+  </head>
 
-
-
-  <title>فروشگاه</title>
-</head>
-
-<body>
-  <header class="layout">
-    <section class="flex items-center justify-between mt-10">
-      <div class="flex gap-10">
-        <img src="./assets/img/SHOP.CO.png" alt="" class="w-[180px] h-[50px] object-contain" />
-        <div class="max-md:hidden">
-          <h4 class="text-xl font-bold">فروشگاه انلاین کاوه</h4>
-          <p class="text-sm text-gray-500 mt-2">
-            فروشگاهی از جنس تکنولوژی های بروز
-          </p>
-        </div>
-      </div>
-
-      <div class="flex gap-5">
-        <button class="bg-[#171D39] text-white py-2 px-4 rounded-xl text-xs">
-          ورود / ثبت نام
-          <i class="fa-solid fa-chevron-left bg-white text-black px-[6px] py-[4px] rounded-md mr-2"></i>
-        </button>
-        <button class="bg-[#fff3f0] py-2 px-4 rounded-xl text-xs">
-          <div class="flex justify-center items-center">
-            <i class="fa-solid fa-chevron-left bg-[#49be78] text-white px-[6px] py-[4px] rounded-md"></i>
-            <span class="mx-3"> سبد خرید </span>
-            <span class="px-[8px] py-[5px] bg-white rounded-md leading-none">2</span>
-          </div>
-        </button>
-        <button class="bg-[#fff3f0] leading-none p-3 rounded-xl">
-          <i class="fa-solid fa-magnifying-glass text-[#ff8a66]"></i>
-        </button>
-      </div>
-    </section>
-    <nav>
-      <ul class="flex gap-1 mt-5 px-10 py-4 rounded-full rounded-tr-none bg-[#171D39] text-white font-bold relative">
-        <li
-          class="group flex hover:bg-[#60008C] hover:shadow-[0px_10px_25px_0px_#ee273a40] rounded-2xl transition-all duration-300">
-          <a href="" class="px-8 py-2"> خانه </a>
-        </li>
-        <li
-          class="group flex hover:bg-[#60008C] hover:shadow-[0px_10px_25px_0px_#ee273a40] rounded-2xl transition-all duration-300">
-          <a href="" class="px-8 py-2">
-            فروشگاه
-            <i class="fa-solid fa-chevron-down text-[8px] mr-1"></i>
-          </a>
-          <!-- <div
-              class="translate-x-[151vw] opacity-0 group-hover:translate-x-[0] group-hover:opacity-100 transition-opacity duration-300 absolute top-[70%] left-0 right-0 pt-[25px]"
-            >
-              <div
-                class="flex text-black bg-white shadow-[0px_10px_25px_0px_#ee273a40] p-3 rounded-3xl h-[300px]"
-              >
-                <div class="w-[30%] h-full border-l">
-                  <div class="flex">
-                    <i class="fa-solid fa-book"></i>
-                    <h5 class="font-bold text-lg">کتاب کودک</h5>
-                  </div>
-                </div>
+  <body>
+    <main>
+      <section class="hero-section">
+        <header class="layout">
+            <section class="header-top">
+              <img src="./assets/img/SHOP.CO.png" alt="" class="logo" />
+    
+              <div class="btn-group">
+                <button class="login-btn">
+                  ورود / ثبت نام
+                  <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <button class="icon-btn">
+                  <i class="fa-solid fa-basket-shopping"></i>
+                </button>
+                <button class="icon-btn">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
               </div>
-            </div> -->
-        </li>
-        <li
-          class="group flex hover:bg-[#60008C] hover:shadow-[0px_10px_25px_0px_#ee273a40] rounded-2xl transition-all duration-300">
-          <a href="" class="px-8 py-2"> درباره ما </a>
-        </li>
-        <li
-          class="group flex hover:bg-[#60008C] hover:shadow-[0px_10px_25px_0px_#ee273a40] rounded-2xl transition-all duration-300">
-          <a href="" class="px-8 py-2"> تماس با ما </a>
-        </li>
-        <li
-          class="group flex hover:bg-[#60008C] hover:shadow-[0px_10px_25px_0px_#ee273a40] rounded-2xl transition-all duration-300">
-          <a href="" class="px-8 py-2"> بلاگ </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section class="layout">
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="./assets/img/product-06-removebg-preview.png" alt="">
-            <h5 class="text-3xl">
-              به روز ترین
-              <br>
-              <span class="font-bold">
-                محصولات
-              </span>
-            </h5>
-          </div>
-          <div class="swiper-slide">
-            <img src="./assets/img/mobl-1.png" alt="">
-            <h5 class="text-3xl">
-              به روز ترین
-              <br>
-              <span class="font-bold">
-                محصولات
-              </span>
-            </h5>
-          </div>
-          <div class="swiper-slide">
-            <img src="./assets/img/mobl-2.png" alt="">
-            <h5 class="text-3xl">
-              به روز ترین
-              <br>
-              <span class="font-bold">
-                محصولات
-              </span>
-            </h5>
-          </div>
+            </section>
+            <nav>
+              <ul>
+                <li class="">
+                  <a href="" class="px-8 py-2"> خانه </a>
+                </li>
+                <li class="">
+                  <a href="" class="px-8 py-2">
+                    فروشگاه
+                    <i class="fa-solid fa-chevron-down text-[8px] mr-1"></i>
+                  </a>
+                  <!-- <div
+                        class="translate-x-[151vw] opacity-0 group-hover:translate-x-[0] group-hover:opacity-100 transition-opacity duration-300 absolute top-[70%] left-0 right-0 pt-[25px]"
+                      >
+                        <div
+                          class="flex text-black bg-white shadow-[0px_10px_25px_0px_#ee273a40] p-3 rounded-3xl h-[300px]"
+                        >
+                          <div class="w-[30%] h-full border-l">
+                            <div class="flex">
+                              <i class="fa-solid fa-book"></i>
+                              <h5 class="font-bold text-lg">کتاب کودک</h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div> -->
+                </li>
+                <li>
+                  <a href=""> درباره ما </a>
+                </li>
+                <li>
+                  <a href=""> تماس با ما </a>
+                </li>
+                <li>
+                  <a href=""> بلاگ </a>
+                </li>
+              </ul>
+            </nav>
+          </header>
 
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./assets/img/product-06-removebg-preview.png" alt="" />
+              <h5>
+                به روز ترین
+                <br />
+                <span> محصولات </span>
+              </h5>
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/img/mobl-1.png" alt="" />
+              <h5>
+                به روز ترین
+                <br />
+                <span> محصولات </span>
+              </h5>
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/img/mobl-2.png" alt="" />
+              <h5>
+                به روز ترین
+                <br />
+                <span> محصولات </span>
+              </h5>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+
+          <div class="swiper-button-next swiper-btn"></div>
+          <div class="swiper-button-prev swiper-btn"></div>
         </div>
-        <div class="swiper-pagination"></div>
+      </section>
+    </main>
 
-        <div class="swiper-button-next swiper-btn"></div>
-        <div class="swiper-button-prev swiper-btn"></div>
-      </div>
-    </section>
-  </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        effect: "fade",
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
 
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      loop: true,
-      effect: "fade",
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    });
-
-    swiper.on('slideChange', function () {
-      console.log(swiper.slides);
-    });
-  </script>
-
-</body>
-
+      swiper.on("slideChange", function () {
+        console.log(swiper.slides);
+      });
+    </script>
+  </body>
 </html>
